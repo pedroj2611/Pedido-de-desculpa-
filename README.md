@@ -11,9 +11,9 @@ Um aplicativo web interativo, moderno e romântico no formato **PWA (Progressive
   - Suporte offline completo através de Service Worker.
 - 🏃💨 **Botão "Não" Fujão**:
   - Ao passar o mouse (no computador) ou tentar tocar na tela (no celular), o botão foge instantaneamente para um local seguro da tela.
-- 🎯 **Regra das 5 Tentativas**:
+- 🎯 **Regra das 8 Tentativas**:
   - A cada tentativa, frases engraçadas e carinhosas aparecem.
-  - Ao passar de 5 tentativas de apertar o "Não", o botão desaparece em uma animação mágica (*poof*), deixando apenas a opção **"Sim"** disponível e destacada!
+  - Ao passar de 8 tentativas de tentar apertar o "Não", o botão desaparece em uma animação mágica (*poof*), deixando apenas a opção **"Sim"** disponível e destacada!
 - 🎆💖 **Celebração com Show de Fogos e Corações**:
   - Ao clicar em **"Sim"**, um show de fogos de artifício com formatos de corações e partículas brilhantes ilumina a tela com animações em Canvas.
   - A mensagem emocionante **"EU TE AMO AMORZINHO!"** se destaca junto a uma linda declaração de amor e reconciliação.

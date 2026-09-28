@@ -108,6 +108,9 @@
     "Ei, não vale tentar recusar! 🥺",
     "Olha como ele foge de você! 😂💕",
     "Você tem certeza disso mesmo? 💔",
+    "Persistente, né? Mas ele é rápido! 🏃💨",
+    "Meu coração não aguenta tanto 'Não'! 😭❤️",
+    "Quase lá... mas o amor vence sempre! ✨",
     "Última chance de tentar clicar no Não... 👀"
   ];
 
@@ -130,8 +133,8 @@
       btnNao.classList.add('fleeing');
     }
 
-    // Se ultrapassar 5 tentativas (> 5), o botão Não desaparece!
-    if (naoAttempts > 5) {
+    // Se ultrapassar 8 tentativas (> 8), o botão Não desaparece!
+    if (naoAttempts > 8) {
       isNaoActive = false;
       btnNao.classList.add('poof-away');
 
