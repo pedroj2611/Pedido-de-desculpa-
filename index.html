@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#ff4b72" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Amorzinho ❤️" />
+  <meta name="description" content="Um pedido de desculpas sincero e especial feito com todo amor do mundo." />
+
+  <title>Você me desculpa, meu amorzinho? ❤️</title>
+
+  <!-- Favicon & PWA Icons -->
+  <link rel="icon" type="image/svg+xml" href="icons/heart.svg" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Efeito de Luzes Ambiente -->
+  <div class="bg-ambient">
+    <div class="ambient-circle circle-1"></div>
+    <div class="ambient-circle circle-2"></div>
+    <div class="ambient-circle circle-3"></div>
+  </div>
+
+  <!-- Canvas de Fogos de Artifício e Corações -->
+  <canvas id="fireworks-canvas"></canvas>
+
+  <!-- Container do App -->
+  <main class="app-container">
+    <!-- 1. TELA DE PERGUNTA -->
+    <section id="question-card" class="glass-card">
+      <div class="avatar-header">
+        <div class="avatar-badge">🥺❤️</div>
+      </div>
+      
+      <h1 class="title">Você me desculpa, meu amorzinho?</h1>
+      <p class="subtitle">Eu errei, mas meu amor por você é infinito e prometo fazer tudo para te ver sorrir de novo... ✨</p>
+
+      <!-- Mensagens dinâmicas das tentativas do Não -->
+      <div class="attempt-feedback" id="attempt-feedback">
+        <!-- Injetado dinamicamente -->
+      </div>
+
+      <!-- Ações: Sim e Não -->
+      <div class="actions-container" id="actions-container">
+        <button id="btn-sim" class="btn btn-sim" type="button" aria-label="Sim, eu te desculpo">
+          Sim! 🥰
+        </button>
+        <button id="btn-nao" class="btn btn-nao" type="button" aria-label="Não">
+          Não 💔
+        </button>
+      </div>
+    </section>
+
+    <!-- 2. TELA DE CELEBRAÇÃO (AO CLICAR EM SIM) -->
+    <section id="celebration-card" class="glass-card hidden">
+      <div class="celebration-badge">🎆💖🎆</div>
+      <h1 class="celebration-title">EU TE AMO AMORZINHO!</h1>
+      
+      <div class="love-letter-box">
+        <p>
+          Obrigado por me perdoar, meu amor! Você é a pessoa mais especial, doce e incrível que já entrou na minha vida.
+        </p>
+        <p>
+          Prometo cuidar de você, te dar os melhores abraços e todo o amor do universo todos os dias! 🌹✨
+        </p>
+        <p>
+          Para sempre juntos! ❤️
+        </p>
+      </div>
+
+      <button id="btn-restart" class="btn btn-restart" type="button">
+        Comemorar de novo! 🎉
+      </button>
+    </section>
+  </main>
+
+  <footer class="footer-note">
+    Feito de coração para <span>Meu Amorzinho</span> ❤️
+  </footer>
+
+  <!-- Scripts -->
+  <script src="fireworks.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
